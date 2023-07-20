@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](../frontendmentor/app/assets/images/preview/mobile.jpg)
-![](../frontendmentor/app/assets/images/preview/desktop.jpg)
+![mobile](/app/assets/images/preview/mobile.jpg)
+![desktop](/app/assets/images/preview/desktop.jpg)
 
 ### Links
 
