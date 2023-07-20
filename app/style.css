@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+.inner-container .image {
+  width: 100%;
+}
+.inner-container .image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.inner-container .desktop {
+  display: none;
+}
+.inner-container .mobile {
+  display: flex;
+}
+.inner-container .text {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.inner-container .text-container {
+  padding: 1.5rem 1rem;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+}
+.inner-container .text-container .subtitle {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+.inner-container .text-container .title {
+  color: hsl(212, 21%, 14%);
+  text-transform: capitalize;
+  font-family: "Fraunces";
+  font-weight: 700;
+  line-height: 200%;
+  padding-right: 3rem;
+}
+.inner-container .text-container .description {
+  color: hsl(228, 12%, 48%);
+  line-height: 180%;
+  letter-spacing: 120%;
+  padding-right: 1rem;
+}
+.inner-container .text-container .description span {
+  text-transform: capitalize;
+}
+.inner-container .text-container .description .brand-name {
+  text-transform: uppercase;
+}
+.inner-container .text-container .price {
+  align-items: center;
+  gap: 1rem;
+}
+.inner-container .text-container .price .new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+}
+.inner-container .text-container .price .old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.inner-container .text-container button {
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.inner-container .text-container button .btn-txt {
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat";
+}
+.inner-container .text-container button:hover {
+  cursor: pointer;
+  background-color: #313f2d;
+}
+
+@media screen and (min-width: 1440px) {
+  .inner-container {
+    flex-direction: row;
+    max-width: 50%;
+  }
+  .inner-container .image img {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .inner-container .desktop {
+    display: flex;
+  }
+  .inner-container .mobile {
+    display: none;
+  }
+  .inner-container .text {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .inner-container .text .text-container {
+    height: 100%;
+    padding: 1rem 3rem 1rem 2rem;
+  }
+  .inner-container .text .text-container .title {
+    padding-right: 5rem;
+  }
+  .inner-container .text .text-container .description {
+    padding-right: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

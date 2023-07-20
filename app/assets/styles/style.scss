@@ -1,0 +1,175 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+// Colors
+$dark_cyan: hsl(158, 36%, 37%);
+$very_dark_cyan: #313f2d;
+$cream: hsl(30, 38%, 92%);
+$very_dark_blue: hsl(212, 21%, 14%);
+$dark_grayish_blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+// Display classes
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Style
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $cream;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+
+  .text {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .text-container {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    .subtitle {
+      color: $dark_grayish_blue;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 500;
+    }
+    .title {
+      color: $very_dark_blue;
+      text-transform: capitalize;
+      font-family: "Fraunces";
+      font-weight: 700;
+      line-height: 200%;
+      padding-right: 3rem;
+    }
+    .description {
+      color: $dark_grayish_blue;
+      line-height: 180%;
+      letter-spacing: 120%;
+      padding-right: 1rem;
+      span {
+        text-transform: capitalize;
+      }
+      .brand-name {
+        text-transform: uppercase;
+      }
+    }
+    .price {
+      align-items: center;
+      gap: 1rem;
+      .new-price {
+        color: $dark_cyan;
+        font-family: "Fraunces";
+      }
+      .old-price {
+        color: $dark_grayish_blue;
+        text-decoration: line-through;
+      }
+    }
+
+    button {
+      background-color: $dark_cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      .btn-txt {
+        color: $white;
+        font-family: "Montserrat";
+      }
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: $very_dark_cyan;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .inner-container {
+    flex-direction: row;
+    max-width: 50%;
+
+    .image {
+      img {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+      }
+    }
+
+    .desktop {
+      display: flex;
+    }
+    .mobile {
+      display: none;
+    }
+
+    .text {
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+      .text-container {
+        height: 100%;
+        padding: 1rem 3rem 1rem 2rem;
+        .title {
+          padding-right: 5rem;
+        }
+        .description {
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+}
