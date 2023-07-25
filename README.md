@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile](/app/assets/images/preview/mobile.jpg)
-![desktop](/app/assets/images/preview/desktop.jpg)
+![image](https://github.com/peachess-dev/frontendmentor/assets/111956270/52215461-e77a-45bd-bfc0-4abc39cda94a)
+
 
 ### Links
 
