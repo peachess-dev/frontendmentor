@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;    
+}
+
+.background {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #00bcd4;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.pattern-top {  
+  position: absolute;
+  bottom: 40%;
+  right: 50%;   
+}
+
+.pattern-bottom {  
+  position: absolute;
+  top: 40%;
+  left: 50%;   
+}
+
+.profile-card {     
+  width: 20rem;
+  margin: auto;  
+  background-color:white; 
+  border-radius:10px; 
+  z-index: 999;  
+}
+
+.avatar-section {
+  padding-top: 5rem;
+  text-align: center;  
+  background-image: url('images/bg-pattern-card.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 70%;  
+  border-radius: 10px;
+}
+
+.avatar-section img{
+  border-radius :50%;   
+  border: 5px solid white;
+}
+
+.info-section {
+  text-align: center; 
+}
+
+.info-section span {
+  font-size: 18px;
+}
+
+.info-section p:first-child {
+  margin-bottom: .2rem;
+}
+
+.info-section p:nth-child(2) {
+  margin-top: .2rem;
+}
+
+.stats-section{
+  display: flex;
+  justify-content: space-evenly;
+  text-align:center;
+  border-top: 1px solid rgb(235, 227, 227);
+  margin: 1rem 0 .5rem;
+}
+
+.stats-section p:first-child {
+  margin-bottom: .2rem;
+}
+
+.stats-section p:nth-child(2) {
+  margin-top: .2rem;
+}
+
+.attribution {
+  z-index: 999;  
+  margin: 0 1rem 1rem 0;
+  align-self: flex-end;
+  font-size: 11px;
+}
+
+.attribution a {
+color: var(--dark-grayish-blue)
+}
+
+.dark-blue {
+  color: var(--dark-blue); 
+}
+
+.dark-grey {
+  color: var(--dark-gray);
+}
+
+.fw400{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+   
+  
